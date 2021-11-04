@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<link href="Antics.css" rel="stylesheet" type="text/css" />
+<link href="Antics.js" rel="js" type="text/js" />
+<link href="server.js" rel="js" type="text/js" />
+<body>
+<div id="body">
+<a href = "Antics_Quiz.html" rel= "html" type="text/html">Quiz in progress</a>
+<a href="Antics.js" rel = "js" type = "text/js"></a>
+<a href="Antics.css" rel = "stylesheet" type = "text/css"></a>
+<h1>Arthur's Antics</h1>
+<h2>Hey, you never know!</h2>
+<h1 color = white>Brought to you by Sleepy's, Eat Fresh!</h1>
+<h2 id = "container">Try to match what someone else says or not at all! Play up to 10, 20, 30 ,40, 0r 50</h2>
+<h3 id = "nav">Wager your amount of points you want to gamble. Cannot be more than 5 points. And must be different for each question. You can Dual someone! When you Dual, You try to Match while the Dualer tries not to match, if you WIN the dual, the opponent loses half there points and cannot play for a round. If you LOSE the Dual, you lose ALL your points.</h3>
+</div></body>
+
+<h2 id = container>Goal for Turn: <div><button type = button id = "rule1" onclick = "chooseGoal()">Turn number</input></div>
+	<!--- <p id = "rule1" onclick = "chooseGoal()">0</p> --->
+	</h2>
+	<table style="width:25%">
+		<tr>
+		  <th>Player Name</th>
+		  <th>Score</th> 
+		  <th>Wager</th>
+		  <th>Dual Challenge</th>
+		</tr>
+		<tr>  
+			<td id = enterName0>Jill</td>
+			<td><div id="input_div">
+				<input type="text" size="25" value="1" id="count">
+			</div></td>
+			<td><input type="text" size="25" value="1" id="count"></td>
+			<td><input type = radio></input></td>
+		</tr>
+		<tr>
+		<td id = enterName1>Honus</td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type = radio></input></td>
+		</tr>
+		<tr>
+		<td id = enterName2>Will</td>
+		  <td><input type="text" size="25" value="1" id="count"></td>
+		  <td><input type="text" size="25" value="1" id="count"></td>
+		  <td><input type = radio></input></td>
+		</tr>
+		<tr>
+		<td id = enterName3>Terry</td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type = radio></input></td>
+		</tr>
+		<td id = enterName4>Ferguson</td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type = radio></input></td>
+		</tr>	
+		<tr>
+		<td id = enterName5>Johan</td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type = radio></input></td>
+		</td>
+		</tr>
+		<td id = enterName6>Lamar</td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type = radio></input></td>
+		</td>
+		<tr>
+		<td id = enterName7>Kendra</td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type="text" size="25" value="1" id="count"></td>
+		<td><input type = radio></input></td>
+		</tr>
+		</td>	
+
+	  </table>
+	  <input type = button onclick = "getPlayerOne()" id = "enterName0" value = "Player1"></input>
+<input type = button onclick = "getPlayerTwo()" id = "enterName1" value = "Player2"></input>
+<input type = button onclick = "getPlayerThree()" id = "enterName2" value = "Player3"></input>
+<input type = button onclick = "getPlayerFour()" id = "enterName3" value = "Player4"></input>
+<input type = button onclick = "getPlayerFive()" id = "enterName4" value = "Player5"></input>
+<input type = button onclick = "getPlayerSix()" id = "enterName5" value = "Player6"></input>
+<input type = button onclick = "getPlayerSeven()" id = "enterName6" value = "Player7"></input>
+<input type = button onclick = "getPlayerEight()" id = "enterName7" value = "Player8"></input>
+	  <div id ="content">
+<img width = "auto" height = "75%" id = "myPicture" src = "default.jpg" onclick = "myPicture()"></img>
+<div id= "item1">(1)</div>
+	<div id= "item2">(2)</div>
+	<div id= "item3">(3)</div>
+<input  type = button onclick = "choosePic()" id = "myPicture" value ="This button does the Photos :]"></input>
+<input type = button onclick = "chooseQs()" id = "item1" value = "This button does the first question :]"></input>
+<input type = button onclick = "chooseQs()" id = "item2" value = "This button does the second question :o]"></input>
+<input type = button onclick = "chooseQs()" id = "item3" value = "This button does the third question [:"></input>
+</div>
+<div><button id = "clickme1">Useless button... lol</button>
+</div>
+
+<script src="Antics.js"></script>
+
+
+</html>
