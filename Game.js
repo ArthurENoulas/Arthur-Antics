@@ -16,6 +16,6 @@ app.get('/', (req, res) =>
             if (response.status !== 200) {
                 console.log('problem with ajax call!' + response.status + "msg" + response.value);
                 return;
-        }
+        };
         
         });
