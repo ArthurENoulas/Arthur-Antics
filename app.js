@@ -8,6 +8,7 @@ const port = 8080;
 //const db = require("./db"); //These 2 files are for the database portion. */
 //const collection = "Antics"; 
 app.get('/', (req, res) => res.sendFile(__dirname + '/Arthur_Antics.html'));
+app.use(express.static(__dirname));
 app.listen(port, () => console.log('Example app listening at http://localhost:8080'));
 
 app.get('/', function(req, res)    {
