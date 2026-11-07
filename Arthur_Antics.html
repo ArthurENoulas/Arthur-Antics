@@ -17,65 +17,68 @@
 <h2 id = container>Goal for Turn: <div><button type = button id = "rule1" onclick = "chooseGoal()">Turn number</input></div>
 	<!--- <p id = "rule1" onclick = "chooseGoal()">0</p> --->
 	</h2>
-	<table style="width:25%">
-		<tr>
-		  <th>Player Name</th>
-		  <th>Score</th> 
-		  <th>Wager</th>
-		  <th>Dual Challenge</th>
-		</tr>
-		<tr>  
-			<td id = enterName0>Jill</td>
-			<td><div id="input_div">
-				<input type="text" size="25" value="1" id="count">
-			</div></td>
-			<td><input type="text" size="25" value="1" id="count"></td>
-			<td><input type = radio></input></td>
-		</tr>
-		<tr>
-		<td id = enterName1>Honus</td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type = radio></input></td>
-		</tr>
-		<tr>
-		<td id = enterName2>Will</td>
-		  <td><input type="text" size="25" value="1" id="count"></td>
-		  <td><input type="text" size="25" value="1" id="count"></td>
-		  <td><input type = radio></input></td>
-		</tr>
-		<tr>
-		<td id = enterName3>Terry</td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type = radio></input></td>
-		</tr>
-		<td id = enterName4>Fergie</td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type = radio></input></td>
-		</tr>	
-		<tr>
-		<td id = enterName5>Johan</td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type = radio></input></td>
-		</td>
-		</tr>
-		<td id = enterName6>Lamar</td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type = radio></input></td>
-		</td>
-		<tr>
-		<td id = enterName7>Kendra</td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type="text" size="25" value="1" id="count"></td>
-		<td><input type = radio></input></td>
-		</tr>
-		</td>	
-
-	  </table>
+	<div class="players-table-wrap">
+		<table class="players-table">
+			<thead>
+				<tr>
+					<th scope="col">Player Name</th>
+					<th scope="col">Score</th>
+					<th scope="col">Wager</th>
+					<th scope="col">Dual Challenge</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="enterName0">Jill</td>
+					<td><input type="text" value="1" aria-label="Jill score"></td>
+					<td><input type="text" value="1" aria-label="Jill wager"></td>
+					<td><input type="radio" aria-label="Jill dual challenge"></td>
+				</tr>
+				<tr>
+					<td id="enterName1">Honus</td>
+					<td><input type="text" value="1" aria-label="Honus score"></td>
+					<td><input type="text" value="1" aria-label="Honus wager"></td>
+					<td><input type="radio" aria-label="Honus dual challenge"></td>
+				</tr>
+				<tr>
+					<td id="enterName2">Will</td>
+					<td><input type="text" value="1" aria-label="Will score"></td>
+					<td><input type="text" value="1" aria-label="Will wager"></td>
+					<td><input type="radio" aria-label="Will dual challenge"></td>
+				</tr>
+				<tr>
+					<td id="enterName3">Terry</td>
+					<td><input type="text" value="1" aria-label="Terry score"></td>
+					<td><input type="text" value="1" aria-label="Terry wager"></td>
+					<td><input type="radio" aria-label="Terry dual challenge"></td>
+				</tr>
+				<tr>
+					<td id="enterName4">Fergie</td>
+					<td><input type="text" value="1" aria-label="Fergie score"></td>
+					<td><input type="text" value="1" aria-label="Fergie wager"></td>
+					<td><input type="radio" aria-label="Fergie dual challenge"></td>
+				</tr>
+				<tr>
+					<td id="enterName5">Johan</td>
+					<td><input type="text" value="1" aria-label="Johan score"></td>
+					<td><input type="text" value="1" aria-label="Johan wager"></td>
+					<td><input type="radio" aria-label="Johan dual challenge"></td>
+				</tr>
+				<tr>
+					<td id="enterName6">Lamar</td>
+					<td><input type="text" value="1" aria-label="Lamar score"></td>
+					<td><input type="text" value="1" aria-label="Lamar wager"></td>
+					<td><input type="radio" aria-label="Lamar dual challenge"></td>
+				</tr>
+				<tr>
+					<td id="enterName7">Kendra</td>
+					<td><input type="text" value="1" aria-label="Kendra score"></td>
+					<td><input type="text" value="1" aria-label="Kendra wager"></td>
+					<td><input type="radio" aria-label="Kendra dual challenge"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 	  <input type = button onclick = "getPlayerOne()" id = "enterName0" value = "Player1"></input>
 <input type = button onclick = "getPlayerTwo()" id = "enterName1" value = "Player2"></input>
 <input type = button onclick = "getPlayerThree()" id = "enterName2" value = "Player3"></input>
